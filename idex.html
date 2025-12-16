@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чайная Лавка</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-leaf"></i>
+            <span>Чайная Лавка</span>
+        </div>
+        
+        <ul class="nav-menu">
+            <li><a href="#home" class="active">Главная</a></li>
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="#contact">Контакты</a></li>
+            <li><a href="https://t.me/teashop" target="_blank">Telegram</a></li>
+            <li><a href="https://www.instagram.com/seled_seld" target="_blank">Instagram</a></li>
+        </ul>
+        
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Герой -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Лучший чай для вас</h1>
+                <p>Натуральный чай от проверенных поставщиков</p>
+                <div class="social-links">
+                    <a href="https://t.me/teashop" target="_blank" class="social-btn telegram">
+                        <i class="fab fa-telegram"></i> Telegram
+                    </a>
+                    <a href="https://www.instagram.com/seled_seldp" target="_blank" class="social-btn instagram">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                </div>
+                <a href="#catalog" class="btn">Выбрать чай</a>
+            </div>
+        </section>
+
+        <!-- Популярные чаи -->
+        <section id="catalog" class="catalog">
+            <h2>Популярные чаи</h2>
+            
+            
+            <div class="tea-grid">
+                <!-- Чай 1 -->
+                <div class="tea-card" onclick="openTea('green')">
+                    <div class="tea-img green"></div>
+                    <h3>Зеленый чай</h3>
+                    <p>Свежий и тонизирующий</p>
+                    <div class="price">от 250 сом :D</div>
+                    <button>Подробнее</button>
+                </div>
+                
+                <!-- Чай 2 -->
+                <div class="tea-card" onclick="openTea('black')">
+                    <div class="tea-img black"></div>
+                    <h3>Черный чай</h3>
+                    <p>Насыщенный и бодрящий</p>
+                    <div class="price">от 180 сом :D</div>
+                    <button>Подробнее</button>
+                </div>
+                
+                <!-- Чай 3 -->
+                <div class="tea-card" onclick="openTea('white')">
+                    <div class="tea-img white"></div>
+                    <h3>Белый чай</h3>
+                    <p>Нежный и ароматный</p>
+                    <div class="price">от 350 сом :D</div>
+                    <button>Подробнее</button>
+                </div>
+                
+                <!-- Чай 4 -->
+                <div class="tea-card" onclick="openTea('herbal')">
+                    <div class="tea-img herbal"></div>
+                    <h3>Травяной чай</h3>
+                    <p>Успокаивающий и полезный</p>
+                    <div class="price">от 150 сом :D</div>
+                    <button>Подробнее</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="features">
+            <h2>Почему мы</h2>
+            
+            <div class="feature-grid">
+                <div class="feature">
+                    <i class="fas fa-leaf"></i>
+                    <h3>100% натурально</h3>
+                    <p>Без химии и всяких ГМОек</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Быстрая доставка</h3>
+                    <p>За 1-2 дня по городу</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-award"></i>
+                    <h3>Лучшее качество</h3>
+                    <p>От проверенных плантаций</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <h3>Поддержка</h3>
+                    <p>Помощь в выборе</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contact" class="contact">
+            <h2>Контакты</h2>
+            
+            <div class="contact-info">
+                <div class="info">
+                    <h3><i class="fas fa-map-marker-alt"></i> Адрес</h3>
+                    <p>г. Бишкек, ул. Ахунбаева</p>
+                    
+                    <h3><i class="fas fa-phone"></i> Телефон</h3>
+                    <p>+996 998 20 28 18</p>
+                    
+                    <h3><i class="fas fa-clock"></i> Часы работы</h3>
+                    <p>Ежедневно 9:00-21:00</p>
+                    
+                    <h3>Социальные сети</h3>
+                    <div class="social-icons">
+                        <a href="https://t.me/teashop" target="_blank" class="social-icon telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://www.instagram.com/seled_seld" target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Карта расположения</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-leaf"></i>
+                <span>Чайная Лавка</span>
+            </div>
+            <div class="footer-social">
+                <p>Подпишитесь на нас:3</p>
+                <div class="social-icons">
+                    <a href="https://t.me/teashop" target="_blank" class="social-icon telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://www.instagram.com/seled_seld" target="_blank" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Чайная Лавка</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
